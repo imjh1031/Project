@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/LoginSearchPw.css">
+</head>
+<body class="body-member body-find-password pc" style="height: 100%;">
+    <div id="container">
+        <div id="contents">
+            <div class="sub_contents">
+                <div class="find_pw first member outer">
+                    <div class="inner single">
+                        <div class="form">
+                            <h3>비밀번호 찾기</h3>
+                            <form id="find-f" class="auth_req" novalidate="novalidate">
+                                <div class="input_box">
+                                    <p>아이디</p>
+                                    <input type="text" name="memberId" minlength="3" placeholder="아이디 또는 이메일을 입력해주세요." oninput="this.value = this.value.replace(/ /g, '').replace(/(\..*)\./g, '$1');" required="" aria-required="true">
+                                </div>
+                                <div class="input_box auth">
+                                    <p>연락처</p>
+                                    <input type="tel" name="cellPhone" minlength="12" maxlength="13" placeholder="연락처를 입력해주세요" required="" aria-required="true">
+                                    <button type="sublit" id="find-f-submit" disabled style="width: 180px; height: 45px; font-size: 15px; font-weight: 500; background-color: black; color: white; margin-bottom: 10px; cursor: pointer;">인증하기</button>
+                                    <span class="grey">휴대폰 번호로 비밀번호 찾기를 진행할 수 있습니다.</span>
+                                </div>
+                                <button class="confirm" onclick="" disabled="" style="width: 500px; height: 60px; margin-top: 156px; font-size: 15px; background-color: black; color: white; cursor: pointer;">확인</button>
+                                <button class="bottom" onclick="" style="width: 500px; height: 60px; margin-top: 12px; font-size: 15px; background-color: black; color: white; cursor: pointer;">로그인</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

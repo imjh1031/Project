@@ -1,0 +1,27 @@
+* {
+
+}
+
+.main-img {
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+.main-img > li {
+    list-style: none;
+}
+
+.main-img > li > div {    
+    text-align: right;
+}
+
+.main-img > li > div > a {    
+    position: relative;
+    top: -100px;
+    left: -50px;
+    font-size: 200%;
+
+    text-decoration-line: none;
+    color: white;
+}

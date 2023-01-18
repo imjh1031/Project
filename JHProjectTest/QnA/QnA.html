@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headline">
+            <span>헬프 데스크</span>
+        </div>
+        <div class="body">
+           <div class="panel-heading">
+                <span>문의 및 의견</span>
+           </div>
+           <div class="panel-body">
+                <form action="" class="qform">
+                    <div class="content-container">
+                        <div class="content-label-container">
+                            <label  class="content-label">상세내용</label>
+                        </div>
+                        
+                        <div class="contentArea">
+                            <textarea class="content-control" id="report_text" name="report_text" rows="3" style="height:160px" placeholder="문의사항을 입력해주세요" >
+
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="email-container">
+                        <div class="control-label-container">
+                            <label for="report_email" class="control-label">Email</label>
+                        </div>
+                        
+                        
+                        <div class="emailArea">
+                            <input class="form-control" id="report_email" name="report_email"  value="" placeholder="이메일 입력" >
+                        </div>
+                        <div class="divider">
+                            
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <p class="help-block pull-left">
+                            <small>좋은 하루 되세요</small>
+                            <br><strong class="etext">기타 문의사항 : aa@naver.com</strong>
+                        </p>
+
+                        <button type="submit" class="btn QnA-submit">
+                            <span class="msg">보내기</span>
+                        </button>
+                    </div>
+
+                </form>
+           </div>
+    </div>
+    
+</body>
+</html>

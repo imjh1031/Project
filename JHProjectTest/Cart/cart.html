@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body class="body-order body-cart pc" style="heigth: 100%">
+    <div id="container">
+        <div id="contents">
+            <div class="sub_content">
+                <div class="content_box cart order">
+                    <h1>장바구니</h1>
+                    <div class="order_wrap inner">
+                        <div class="cart_cont">
+                            <form id="frmCart" name="frmCart" method="post" target="ifrmProcess">
+                                <div class="cart_cont_list">
+                                    <div class="<!--order_table_type--> list">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>상품정보</th>
+                                                    <th></th>
+                                                    <th>수량</th>
+                                                    <th>주문금액</th>
+                                                    <th>삭제</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="td_left">
+                                                        <div class="pick_add_cont">
+                                                            <span class="pick_add_img">
+                                                                <a href="">
+                                                                    <img src="/image/PDP_perfume_thaw_50ml_1.jpg"
+                                                                        width="40" alt="퍼퓸 쏘,선셋" title="퍼퓸 쏘,선셋"
+                                                                        class="middle">
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="pick_add_info">
+                                                            <em>
+                                                                <a href="/IJHDetailPageTest copy.html" class="name">퍼퓸
+                                                                    쏘,선셋</a>
+                                                            </em>
+                                                            <p class="price"></p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="td_test">
+                                                        <img class="count_minus"
+                                                            src="https://siitatr1563.cdn-nhncommerce.com/data/skin/front/awesome/img/sita2/quantity_minus.svg"
+                                                            data-goodsno="1000000008" data-mode="minus"
+                                                            data-optionsno="67" data-sno="150323" data-count="1"
+                                                            data-cartsno="150323">
+                                                        <span class="count">1</span>
+                                                        <img class="count_plus"
+                                                            src="https://siitatr1563.cdn-nhncommerce.com/data/skin/front/awesome/img/sita2/quantity_plus.svg"
+                                                            data-goodsno="1000000008" data-mode="plus"
+                                                            data-optionsno="67" data-sno="150323" data-count="1"
+                                                            data-cartsno="150323">
+                                                    </td>
+                                                    <td class="td_price">
+                                                        <strong class="order_sum_txt">원</strong>
+                                                        <p class="add_currency"></p>
+                                                    </td>
+                                                    <td>
+                                                        <img class="remove"
+                                                            src="https://siitatr1563.cdn-nhncommerce.com/data/skin/front/awesome/img/sita2/cart_close.svg"
+                                                            data-sno="150323">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="savings">소중한 순간을 더욱 특별하게 만들어줄 우리만의 🎁제품으로 따듯한 마음을 전해보세요.</div>
+                            <div class="price_sum sum">
+                                <div class="price_sum_cont">
+                                    <div class="price_sum_list">
+                                        <dl>
+                                            <dt>총 상품금액</dt>
+                                            <dd>
+                                                <strong id="totalGoodsPrice"></strong>
+                                                원
+                                            </dd>
+                                        </dl>
+                                        <dl class="sign">
+                                            <dt>&nbsp;</dt>
+                                            <dd>
+                                                <img src="https://siitatr1563.cdn-nhncommerce.com/data/skin/front/awesome/img/sita2/cart_sum_plus.svg"
+                                                    alt="더하기">
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>총 배송비</dt>
+                                            <dd>
+                                                <strong id="totalDeliveryCharge"></strong>
+                                                원
+                                            </dd>
+                                        </dl>
+                                        <dl class="sign">
+                                            <dt>&nbsp;</dt>
+                                            <dd>
+                                                <img src="https://siitatr1563.cdn-nhncommerce.com/data/skin/front/awesome/img/sita2/cart_sum_equal.svg"
+                                                    alt="합계">
+                                            </dd>
+                                        </dl>
+                                        <dl class="price_total">
+                                            <dt>결제예정금액</dt>
+                                            <dd>
+                                                <strong id="totalSettlePrice"></strong>
+                                                원
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_order_box">
+                                <span class="button_box">
+                                    <button type="button" class="btn_order_whole_buy buy"
+                                        onclick="gd_order_all();">주문하기</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
