@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.QnaBoard {
+    height: 900px;
+}
+.qna-con {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.qna-board-box {
+    width: 1000px;
+}
+.board-head-box {
+    width: 100%;
+}
+.qna-board-head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: collapse;
+}
+.board-table-box {
+    width: 100%;
+}
+
+.board-table-box td {
+    width: 200px;
+    height: 70px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid gray
+}
+
+.board-name {
+    width: 400px;
+}
+
+.board-setting {
+    background-color: #e6e6e6;
+}
+.qna-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: 40px;
+    width: 100px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+}
